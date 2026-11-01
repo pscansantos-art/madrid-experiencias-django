@@ -1,4 +1,4 @@
-# 🇪🇸 Madrid Experiências - Guia Turístico Web
+# Madrid Experiências - Guia Turístico Web
 
 Aplicação web desenvolvida com a arquitetura **Django (MVT)** focada no turismo da cidade de Madrid, destacando seus principais pontos históricos, culturais e a tradição futebolística no Estádio Santiago Bernabéu.
 
