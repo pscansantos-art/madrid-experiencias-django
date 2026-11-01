@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Madrid Turismo{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'destino/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'atracoes' %}" class="logo">Madrid Experiências</a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'atracoes' %}">Atrações</a></li>
+                <li><a href="{% url 'historia_cultura' %}">História e Cultura</a></li>
+                <li><a href="{% url 'galeria' %}">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agência Madrid Experiencias. Projeto desenvolvido em Django.</p>
+    </footer>
+</body>
+</html>

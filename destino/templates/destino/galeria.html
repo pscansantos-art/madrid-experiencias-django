@@ -1,0 +1,35 @@
+{% extends 'destino/base.html' %}
+{% load static %}
+
+{% block title %}Galeria de Fotos - Madrid Turismo{% endblock %}
+
+{% block content %}
+<h2>Galeria de Paisagens e Monumentos</h2>
+
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="{% static 'destino/images/palacio_real.jpg' %}" alt="Palácio Real">
+        <div class="gallery-caption">Palácio Real de Madrid</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'destino/images/museo_prado.jpg' %}" alt="Museu do Prado">
+        <div class="gallery-caption">Museu do Prado</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'destino/images/plaza_mayor.jpg' %}" alt="Plaza Mayor">
+        <div class="gallery-caption">Plaza Mayor</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'destino/images/puerta_alcala.jpg' %}" alt="Puerta de Alcalá">
+        <div class="gallery-caption">Puerta de Alcalá</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'destino/images/parque_retiro.jpg' %}" alt="Parque do Retiro">
+        <div class="gallery-caption">Parque do Retiro e Palácio de Cristal</div>
+    </div>
+    <div class="gallery-item">
+        <img src="{% static 'destino/images/gran_via.jpg' %}" alt="Gran Vía">
+        <div class="gallery-caption">Avenida Gran Vía</div>
+    </div>
+</div>
+{% endblock %}

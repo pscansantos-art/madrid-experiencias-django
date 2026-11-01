@@ -1,0 +1,38 @@
+{% extends 'destino/base.html' %}
+{% load static %}
+
+{% block title %}Atrações - Madrid Turismo{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Descubra Madrid</h1>
+    <p>Explore a vibrante capital da Espanha, repleta de arte, arquitetura monumental e praças históricas.</p>
+</section>
+
+<h2>Principais Atrações</h2>
+<div class="cards-grid">
+    <div class="card">
+        <img src="{% static 'destino/images/bernabeu.jpg' %}" alt="Estádio Santiago Bernabéu">
+        <div class="card-content">
+            <h3>Estádio Santiago Bernabéu</h3>
+            <p>A lendária casa do Real Madrid, um dos maiores clubes de futebol do mundo. Um templo moderno do esporte com tour interativo e museu de troféus.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'destino/images/palacio_real.jpg' %}" alt="Palácio Real de Madrid">
+        <div class="card-content">
+            <h3>Palácio Real de Madrid</h3>
+            <p>A residência oficial da família real espanhola é um dos maiores palácios da Europa, famoso por sua arquitetura majestosa e salões suntuosos.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'destino/images/museo_prado.jpg' %}" alt="Museu do Prado">
+        <div class="card-content">
+            <h3>Museu do Prado</h3>
+            <p>Um dos museus de arte mais importantes do mundo, abrigando obras-primas de Velázquez, Goya e El Greco.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
